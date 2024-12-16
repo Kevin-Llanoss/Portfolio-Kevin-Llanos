@@ -4,13 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio - Kevin Maximiliano Llanos</title>
+  <!-- Tipografías -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  
+  <!-- Iconos (Font Awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-OHTc+NH4Xgqcd/9d/mpTU6u5zTG4yfXHG4iFx5z3lC8AenLJFc0lcx0ltSPH7eXuWyMB7AHtG6q1T9P0u47YXQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Botón Back to Top -->
+  <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+  <!-- Barra de progreso de scroll -->
+  <div class="scroll-progress-bar"></div>
+
   <!-- HEADER -->
   <header class="header">
-    <nav class="nav">
+    <nav class="nav" id="navbar">
       <div class="logo">KML</div>
       <ul class="nav-menu">
         <li><a href="#hero">Inicio</a></li>
@@ -19,24 +34,27 @@
         <li><a href="#projects">Proyectos</a></li>
         <li><a href="#contact">Contacto</a></li>
       </ul>
+      <!-- Botón para cambiar el tema -->
+      <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+      </div>
     </nav>
   </header>
 
   <!-- HERO SECTION -->
   <section class="hero" id="hero">
-    <div class="hero-content">
-      <h1>Kevin Maximiliano Llanos</h1>
-      <p class="subtitle">Analista de Datos | Científico de Datos | Economista Empresarial</p>
+    <div class="hero-content" data-aos="zoom-in">
+      <h1 class="typing"></h1>
+      <p class="subtitle">Analista de Datos Jr. | Científico de Datos Jr. | Economista Empresarial</p>
     </div>
   </section>
 
   <!-- ABOUT SECTION -->
   <section class="about" id="about">
     <div class="container">
-      <h2>Sobre Mí</h2>
-      <div class="about-wrapper">
+      <h2 data-aos="fade-up">Sobre Mí</h2>
+      <div class="about-wrapper" data-aos="fade-up">
         <div class="about-img">
-          <!-- Reemplaza "tu-foto.jpg" con tu imagen -->
           <img src="tu-foto.jpg" alt="Kevin Maximiliano Llanos">
         </div>
         <div class="about-info">
@@ -53,21 +71,21 @@
       <h2>Formación</h2>
       <div class="formacion-cards">
         <!-- Tarjeta 1 -->
-        <div class="card">
+        <div class="card glass">
           <div class="card-icon">🎓</div>
           <h3>Licenciatura en Economía Empresarial</h3>
           <p>Universidad Nacional del Centro de la Provincia de Buenos Aires, 2019 – 2024</p>
         </div>
-
+  
         <!-- Tarjeta 2 -->
-        <div class="card">
-          <div class="card-icon">💻</div>
+        <div class="card glass">
+          <div class="card-icon">💻</div> 
           <h3>Especialista en Data Science</h3>
           <p>Curso avanzado en Python y Machine Learning</p>
         </div>
-
+  
         <!-- Tarjeta 3 -->
-        <div class="card">
+        <div class="card glass">
           <div class="card-icon">📈</div>
           <h3>Gestión y Análisis de Datos</h3>
           <p>Certificación en R y Power BI</p>
@@ -75,46 +93,46 @@
       </div>
     </div>
   </section>
+  
 
   <!-- PROJECTS SECTION -->
   <section class="projects" id="projects">
     <div class="container">
-      <h2>Proyectos Destacados</h2>
+      <h2 data-aos="fade-up">Proyectos Destacados</h2>
       <div class="projects-grid">
-        <!-- Ejemplo de proyecto -->
-        <div class="project-card">
+        <!-- Proyecto 1 -->
+        <div class="project-card" data-aos="fade-up">
           <img src="proyecto1.jpg" alt="Proyecto 1">
           <h3>Análisis de Ventas</h3>
           <p>Uso de Python y Power BI para analizar tendencias en ventas mensuales.</p>
           <a href="#" class="btn-secondary" target="_blank">Ver Proyecto</a>
         </div>
-        <!-- Agrega más proyectos -->
-         <!-- Proyecto 2 -->
-<div class="project-card">
-    <img src="proyecto2.jpg" alt="Proyecto 2">
-    <h3>Modelo Predictivo de Conversión a VIP</h3>
-    <p>Desarrollo de un modelo predictivo en Python para analizar la probabilidad de conversión a VIP en un conjunto de clientes.</p>
-    <a href="#" class="btn-secondary" target="_blank">Ver Proyecto</a>
-  </div>
-  
-  <!-- Proyecto 3 -->
-  <div class="project-card">
-    <img src="proyecto3.jpg" alt="Proyecto 3">
-    <h3>Análisis de Inventarios</h3>
-    <p>Uso de R y Shiny para crear una aplicación interactiva de gestión de inventarios con visualización de datos.</p>
-    <a href="#" class="btn-secondary" target="_blank">Ver Proyecto</a>
-  </div>
-  
+
+        <!-- Proyecto 2 -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <img src="proyecto2.jpg" alt="Proyecto 2">
+          <h3>Modelo Predictivo de Conversión a VIP</h3>
+          <p>Desarrollo de un modelo predictivo en Python para analizar la probabilidad de conversión a VIP.</p>
+          <a href="#" class="btn-secondary" target="_blank">Ver Proyecto</a>
+        </div>
+
+        <!-- Proyecto 3 -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <img src="proyecto3.jpg" alt="Proyecto 3">
+          <h3>Análisis de Inventarios</h3>
+          <p>Uso de R y Shiny para una aplicación interactiva de gestión de inventarios con visualización de datos.</p>
+          <a href="#" class="btn-secondary" target="_blank">Ver Proyecto</a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- CONTACT SECTION -->
-<section class="contact" id="contact">
+  <section class="contact" id="contact">
     <div class="container">
-      <h2>Contacto</h2>
-      <p>¿Tienes algún proyecto en mente o quieres colaborar? ¡Hablemos!</p>
-      <form action="send-email.php" method="POST" class="contact-form">
+      <h2 data-aos="fade-up">Contacto</h2>
+      <p data-aos="fade-up">¿Tienes algún proyecto en mente o quieres colaborar? ¡Hablemos!</p>
+      <form action="send-email.php" method="POST" class="contact-form" data-aos="fade-up">
         <input type="text" name="name" placeholder="Tu nombre" required />
         <input type="email" name="email" placeholder="Tu correo" required />
         <textarea name="message" placeholder="Tu mensaje" required></textarea>
@@ -122,28 +140,28 @@
       </form>
     </div>
   </section>
-  
 
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <p>&copy; 2024 Kevin Maximiliano Llanos. Todos los derechos reservados.</p>
+      <div class="social-icons">
+        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
     </div>
   </footer>
 
-  <!-- Scroll Suave (opcional) -->
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth'
-          });
-        }
-      });
+    AOS.init({
+      duration: 1000,
+      once: true
     });
   </script>
+
+  <!-- Nuestro JavaScript externo -->
+  <script src="script.js"></script>
 </body>
 </html>
