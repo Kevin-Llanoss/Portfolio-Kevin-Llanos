@@ -128,19 +128,21 @@
   </section>
 
   <!-- CONTACT SECTION -->
-<section class="contact" id="contact">
-  <div class="container">
-    <h2 data-aos="fade-up">Contacto</h2>
-    <p data-aos="fade-up">¿Tienes algún proyecto en mente o quieres colaborar? ¡Hablemos!</p>
-    <!-- Formulario actualizado -->
-    <form action="https://formspree.io/f/xovqodkv" method="POST" class="contact-form" data-aos="fade-up">
-      <input type="text" name="name" placeholder="Tu nombre" required />
-      <input type="email" name="email" placeholder="Tu correo" required />
-      <textarea name="message" placeholder="Tu mensaje" required></textarea>
-      <button type="submit" class="btn-primary">Enviar</button>
-    </form>
-  </div>
-</section>
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 data-aos="fade-up">Contacto</h2>
+      <p data-aos="fade-up">¿Tienes algún proyecto en mente o quieres colaborar? ¡Hablemos!</p>
+      <!-- Formulario actualizado con redirección -->
+      <form action="https://formspree.io/f/xovqodkv" method="POST" class="contact-form" data-aos="fade-up">
+        <input type="text" name="name" placeholder="Tu nombre" required />
+        <input type="email" name="email" placeholder="Tu correo" required />
+        <textarea name="message" placeholder="Tu mensaje" required></textarea>
+        <!-- Redirección a thankyou.html -->
+        <input type="hidden" name="_next" value="https://kevin-llanoss.github.io/thankyou.html" />
+        <button type="submit" class="btn-primary">Enviar</button>
+      </form>
+    </div>
+  </section>
 
   <!-- FOOTER -->
   <footer class="footer">
